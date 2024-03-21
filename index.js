@@ -14,6 +14,7 @@ const todoRoutes = require("./routes/Todo")
 const app = express();
 
 const uri = process.env.MONGODB_URI;
+
 //const URL = "mongodb+srv://ferrari:ferrari4cr@cluster0.vdg5s6s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 mongoose.connect(uri, {
@@ -36,7 +37,7 @@ app.use(bodyParser.json());
 app.use("/api",todoRoutes)
 
 app.listen(port, () => {
-    console.log(`server is running on PORT : ${PORT}`)
+    console.log(`server is running on PORT : ${port}`)
 });
 
 
