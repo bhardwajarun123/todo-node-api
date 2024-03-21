@@ -16,7 +16,7 @@ exports.getTodoById = (req, res, next, todoId) => {
 
 }
 
-exports.getAllTodo = (req, res) => {
+exports.getAllTodos = (req, res) => {
     Todo.find().sort("_createAt").exec((err, todos) =>{
         if(err || !todos) {
             return res.status(400).json({
