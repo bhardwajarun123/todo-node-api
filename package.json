@@ -1,12 +1,11 @@
 {
   "name": "todo-node-api",
   "version": "1.0.0",
-  "description": "todo-node-api",
+  "description": "Todo Node API",
   "main": "index.js",
   "scripts": {
-    "build": "npm i && npm build",
-    "start": "nodemon index.js"
-
+    "start": "nodemon index.js",
+    "build": "npm install"
   },
   "author": "",
   "license": "ISC",
