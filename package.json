@@ -4,7 +4,7 @@
   "description": "Todo Node API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "npx nodemon index.js",
     "build": "npm install"
   },
   "author": "",
@@ -14,7 +14,9 @@
     "cors": "^2.8.5",
     "express": "^4.19.1",
     "mongoose": "^8.2.2",
-    "nodemon": "^3.1.0",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
