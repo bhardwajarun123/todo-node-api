@@ -4,7 +4,8 @@
   "description": "Todo Node API",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "nodemon index.js",
     "build": "npm install"
   },
   "author": "",
